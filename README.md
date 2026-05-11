@@ -49,6 +49,10 @@ The generated `.gpx` file contains:
 - Timestamp (UTC)
 - Name: `Pin (port) 1`, `Pin (port) 2`, `Committee boat (starboard) 1`, etc.
 
+## Acknowledgements
+
+Based on the [Vakaros VKX format specification](https://github.com/vakaros/vkx).
+
 ## License
 
 MIT
