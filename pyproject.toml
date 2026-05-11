@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vkx2gpx"
+authors = [
+    {name = "Matxin Jiménez", email = "matxinj@gmail.com"},
+]
+description = "Convert Vakaros .vkx sailing telemetry files to .gpx format"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["sailing", "gps", "gpx", "vakaros", "telemetry"]
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+dependencies = [
+    "gpxpy",
+]
+dynamic = ["version"]
+
+[project.urls]
+Repository = "https://github.com/Matx1n3/vkx2gpx"
+Issues = "https://github.com/Matx1n3/vkx2gpx/issues"
+
+[project.optional-dependencies]
+dev = ["build", "twine"]
+
+[project.scripts]
+vkx2gpx = "vkx2gpx.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
